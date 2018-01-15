@@ -4,13 +4,15 @@
   <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
   <style type="text/css">
     .titlebar {
-        text-align: center;
-        vertical-align: center;
-        height: 30px;
-        margin: 0px;
-        background-color: #880000;
-        color: #FFFFFF;
-      }
+      text-align: center;
+      vertical-align: center;
+      height: 30px;
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      background-color: #880000;
+      color: #FFFFFF;
+    }
     #background {
       background-color: #000000;
     }
@@ -25,15 +27,21 @@
       color: #000000;
     }
     @media only screen and (max-width:1400px){
+      .titlebar {
+        width: 100%
+      }
       .titlebar ul li {
         display: inline-block;
         width: 25%;
       }
     }
     @media only screen and (min-width:1400px){
+      .titlebar {
+        width: 1400px
+      }
       .titlebar ul li {
         display: inline-block;
-        width: 100px;
+        width: 25%;
       }
     }
   </style>
