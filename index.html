@@ -9,7 +9,7 @@
         height: 30px;
         margin: 0px;
         background-color: #880000;
-        font-color: #FFFFFF;
+        color: #FFFFFF;
       }
     #background {
       background-color: #000000;
@@ -20,13 +20,18 @@
     #main {
       text-align: center;
     }
+    .titlebar ul li.active {
+      background-color: #888888;
+    }
     @media only screen and (max-width:1400px){
       .titlebar ul li {
+        display: inline-block;
         width: 25%;
       }
     }
     @media only screen and (min-width:1400px){
       .titlebar ul li {
+        display: inline-block;
         width: 100px;
       }
     }
