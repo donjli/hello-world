@@ -1,5 +1,5 @@
 <html>
-<header>
+<head>
   <title>Hello World</title>
   <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
   <style type="css/text">
@@ -15,15 +15,22 @@
     body {
       font: "Comic Sans MS"
     }
+    main {
+      text-align: center
+    }
     @media only screen and (max-width:1400px){
       titlebar {
         width: 100%
       }
       
-    
-</header>
+    @media only screen and (max-width:3000px){
+      titlebar {
+        width: 1400px
+      }
+  </style>
+</head>
 <body>
-<div id="titlebar"/>
-Hi. this loaded.
+<div id="titlebar"> </div>
+<div id="main"> Hi. this loaded. </div>
 </body>
 </html>
