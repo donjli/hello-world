@@ -4,8 +4,7 @@
   <!-- <link rel="shortcut icon" href="/favicon.ico" /> -->
   <style type="text/css">
     .titlebar {
-      align: center;
-      text-align: center;
+      align-content: center;
       vertical-align: center;
       height: 30px;
       margin: 0px;
@@ -23,6 +22,12 @@
     #main {
       text-align: center;
     }
+    .titlebar ul li {
+      float: left;
+      text-align: center;
+      padding: 0px 10px 0px 10px;
+      height: 100%
+    }
     .titlebar ul li:hover {
       background-color: #AAAAAA;
       color: #000000;
@@ -31,28 +36,23 @@
       .titlebar {
         width: 100%
       }
-      .titlebar ul li {
-        display: inline-block;
-        width: 25%;
-      }
     }
     @media only screen and (min-width:1400px){
       .titlebar {
         width: 1400px
-      }
-      .titlebar ul li {
-        display: inline-block;
-        width: 25%;
       }
     }
   </style>
 </head>
 <body>
 <div class="titlebar">
-  <ul><li><a>T1</a></li
-    ><li><a>T2</a></li
-    ><li><a>T3</a></li
-    ><li><a>T4</a></li></ul>
+  <ul>
+    <li><a>Topic 1</a></li>
+    <li><a>Topic 2</a></li>
+    <li><a>Topic 3</a></li>
+    <li><a>Topic 4</a></li>
+    <li style="float: right; background-color: #222222; color: #FFFFFF;">Right Topic 1</li>
+  </ul>
 </div>
 <div id="main"> Hi. this loaded. </div>
 </body>
