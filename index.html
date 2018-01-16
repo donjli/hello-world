@@ -29,15 +29,15 @@
       color: #AA0000;
     }
     .titlebar ul li {
-      list-style-type: none;
-      float: left;
+      display: inline-block;
+      <!--list-style-type: none;
       text-align: center;
       line-height: 60px;
       white-space: nowrap;
       padding: 0px 30px 0px 30px;
-      height: 100%;
+      height: 100%;-->
     }
-    .titlebar ul li a {
+    .titlebar a {
       color: inherit;
     }
     .titlebar ul li.right {
@@ -54,7 +54,7 @@
     }
     .dropdown {
       display: none;
-      position: absolute;
+      position: relative;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
