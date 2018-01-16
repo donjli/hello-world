@@ -18,11 +18,12 @@
       background-color: #880000;
       color: #FFFFFF;
     }
-    #background {
+    .background {
       background-color: #000000;
     }
     body {
       font: small-caps 24px "Comic Sans MS";
+      align-content: center;
     }
     #main {
       text-align: left;
@@ -32,9 +33,9 @@
       list-style-type: none;
       float: left;
       text-align: center;
-      line-height: 50px
-      <!-- white-space: nowrap; -->
-      padding: 0px 10px 0px 10px;
+      line-height: 80px;
+      white-space: nowrap;
+      padding: 0px 30px 0px 30px;
       height: 100%;
     }
     .titlebar ul li.right {
@@ -64,14 +65,14 @@
     }
   </style>
 </head>
-<body>
+<body class="background">
   <h1> Welcome. </h1>
   <div class="titlebar">
     <ul>
-      <li><a>Topic 1</a><span class="titlebar"></span></li>
-      <li><a>Topic 2</a><span class="titlebar"></span></li>
-      <li><a>Topic 3</a><span class="titlebar"></span></li>
-      <li><a>Topic 4</a><span class="titlebar"></span></li>
+      <li><a href="#">Topic 1</a></li>
+      <li><a href="#">Topic 2</a></li>
+      <li><a href="#">Topic 3</a></li>
+      <li><a href="#">Topic 4</a></li>
       <li class="right">Right Topic 1</li><span class="titlebar"></span>
     </ul>
   </div>
