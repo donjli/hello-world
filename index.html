@@ -45,7 +45,7 @@
       background-color: #222222; 
       color: #FFFFFF;
     }
-    .titlebar ul li + li:hover {
+    .titlebar ul li + li:hover, .titlebar ul li + li:hover .menu {
       background-color: #AAAAAA;
       color: #000000;
     }
@@ -54,10 +54,13 @@
     }
     .dropdown {
       display: none;
-      position: relative;
+      position: absolute;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
+    }
+    .dropdown a:hover {
+      background-color: #55FF55;
     }
     
     @media only screen and (max-width:1400px){
@@ -84,11 +87,11 @@
   <h1> Welcome. </h1>
   <div class="titlebar">
     <ul><li>Navigation: </li>
-      <li><a href="#">Topic 1</a>
-        <div class="dropdown"><a href="#">Subtopic 1</a></div>
-        <div class="dropdown"><a href="#">Subtopic 2</a></div>
-        <div class="dropdown"><a href="#">Subtopic 3</a></div>
-        <div class="dropdown"><a href="#">Subtopic 4</a></div>
+      <li class="menu"><a href="#">Topic 1</a><div class="dropdown">
+        <a href="#">Subtopic 1</a>
+        <a href="#">Subtopic 2</a>
+        <a href="#">Subtopic 3</a>
+        <a href="#">Subtopic 4</a>
         </li>
       <li><a href="#">Topic 2</a></li>
       <li><a href="#">Topic 3</a></li>
